@@ -1,0 +1,100 @@
+:root{
+    --orange:#E76F51;
+}
+html{
+    box-sizing: border-box;
+    font-size: 10px;
+
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+body{
+    line-height: 1.6;
+    font-size: 1.6rem;
+
+}
+a{
+    text-decoration: none;
+}
+.header{
+    background-image:linear-gradient(rgba(59,55,53,0.5),rgba(59,55,53,0.5)) ,url(../images/images/header-bg.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 0;
+}
+.app-logo{
+    display: block;
+    width: 5rem;
+    height: 5rem;
+}
+.menu{
+    display: none;
+}
+.menu__item{
+
+}
+.menu_link{
+
+}
+.header__links{
+display: none;
+}
+.header__link{
+
+}
+.header__link--border{
+
+}
+.nav__btn{
+    background-color: #fff;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.nav__btn-line{
+    width: 2rem;
+    height: 0.22rem;
+    background-color: var(--orange);
+    display: block;
+    border-radius: 2rem;
+    position: relative;
+    transition: all 250ms ease-in-out;
+}
+.nav__btn-line::after,
+.nav__btn-line::before{
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 0.2rem;
+    background-color: var(--orange);
+    display: block;
+    border-radius: 2rem;
+   
+}
+.nav__btn-line::before{
+    top: 0.6rem;
+}
+.nav__btn-line::after{
+    top: -0.6rem;
+}
+.nav__btn--open .nav__btn-line {
+    background-color: transparent;
+}
+.nav__btn--open .nav__btn-line::after{
+    transform:translateY(7px)rotate(45deg);
+    height: 0.3rem;
+}
+.nav__btn--open .nav__btn-line::before{
+    transform: translateY(-5px) rotate(-45deg) ;
+    height: 0.3rem;
+}
