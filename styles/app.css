@@ -1,4 +1,5 @@
 :root{
+    --pink-melo:#F8E1DB;
     --pink:#FAF4F2;
     --orange:#E76F51;
     --grey:#D2D2D2;
@@ -313,9 +314,6 @@ gap: 1rem;
   section bottom header
 =========================
 */
-.main{
-
-}
 .servises{
     display: flex;
     flex-wrap: wrap;
@@ -362,9 +360,6 @@ gap: 1rem;
 .destination{
     margin: 0 3.5rem 3rem 3.5rem;
     text-align: center;
-}
-.destenation__logo{
-
 }
 .destination__title{
     font-size: 1.9rem;
@@ -494,4 +489,83 @@ gap: 1rem;
 .destination__btn:hover{
     color: #fff;
     background-color: var(--orange);
+}
+/*
+===================
+    newsletter
+===================
+*/
+.newsletter{
+    background-color: var(--pink-melo);
+    margin-top: 15rem;
+    border-radius: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 3rem 2rem;
+    align-items: center;
+    gap: 3rem;
+    justify-content: space-between;
+}
+.newsletter__content{
+    
+    max-width: 61rem;
+}
+.newsletter__title{
+    font-size: 3rem;
+    font-family: var(--second-font);
+    color: var(--fool-dark);
+    margin: 1.5rem auto;
+}
+.newsletter__caption{
+    font-size: 1.4rem;
+    font-family: var(--primery-font-md);
+    color: var(--fool-dark);
+    margin-bottom: 2rem;
+}
+.form{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.newsletter__email{
+    position: relative;
+    height: 8rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 0 2rem;
+}
+.newsletter__email-icon{
+    flex-shrink: 0;
+    width: 3rem;
+}
+.newsletter__email-input{
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+    color: var(--btn-back);
+    font-size: 1.6rem;
+    cursor: pointer; 
+    
+}
+.newsletter__email-submit{
+    flex-shrink: 0;
+    padding: 1.1rem;
+    width: 5rem;
+    border: none;
+    outline: none;
+    height: 5rem;
+    border-radius: 2rem;
+    background-color: var(--orange);
+}
+.newsletter__email-input-icon{
+
+}
+.newsletter__img{
+    width: 100%;
+}
+.newsletter__img{
+
 }
