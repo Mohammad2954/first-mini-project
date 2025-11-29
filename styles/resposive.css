@@ -7,6 +7,12 @@
         font-size: 1.4rem;
         max-width: 27rem;
     }
+    .footer__rigth {
+    flex-wrap: wrap;
+    }
+    .footer-list {
+    width: 13rem;
+    }
 }
 @media screen and (min-width: 370px) {
 
@@ -54,6 +60,13 @@
     }
     .place {
     width: 45.5rem;
+    }
+    .footer__wrapper{
+        display: flex;
+    }
+    .scroll-icon{
+
+        left: auto;
     }
 }
 @media screen and (min-width: 1200px) {
