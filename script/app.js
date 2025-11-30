@@ -1,6 +1,7 @@
 const navBtn=document.querySelector(".nav__btn")
 const navMenu=document.querySelector(".nav-menu")
 let menuLink=document.querySelectorAll(".menu_link")
+let placeLinkIcon=document.querySelectorAll(".place__link--icon")
 flagbtn=false
 navBtn.addEventListener("click" ,function(){
     if(flagbtn){
@@ -25,4 +26,9 @@ menuLink.forEach(a=>{
         a.classList.add("menu_link--active")
     })
     
+})
+placeLinkIcon.forEach(a=>{
+    a.addEventListener("click",()=>{
+        a.classList.toggle("place__link--icon-active")
+    })
 })
