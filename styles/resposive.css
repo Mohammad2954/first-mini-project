@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media screen and (max-width: 370px) {
     .header-content__title{
       font-size: 3.5rem;
@@ -8,16 +15,22 @@
         max-width: 27rem;
     }
     .footer__rigth {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     }
     .footer-list {
     width: 13rem;
     }
+   
+
 }
 @media screen and (min-width: 370px) {
 
     .destination__title{
        font-size: 2.4rem;
+    }
+     .newsletter::before{
+        width: 82rem;
     }
  
 }
@@ -28,6 +41,12 @@
     }
      .destination__title{
        font-size: 3rem;
+    }
+     .newsletter::before{
+        width: 99rem;
+    }
+    .container{
+        width: 54rem;
     }
     
  
@@ -41,32 +60,56 @@
         max-width: 50rem;
     }
     .menu{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
    .place {
     width: 33.5rem;
     }
     .newsletter{
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         text-align: start;
         padding: 3rem 6rem;
         max-height: 39rem;
+    }
+    .newsletter::before{
+        left: -56rem;
+        right: 0;
+        top: -39rem;
+        bottom: 0;
+        width: auto;
+        height: auto;
+        background-size: auto;
+    }
+    .container{
+        width: 72rem;
     }
     
 }
 @media screen and (min-width: 992px) {
    .header__links{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .place {
     width: 45.5rem;
     }
     .footer__wrapper{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .scroll-icon{
 
         left: auto;
+    }
+    .container{
+        width: 96rem;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -76,6 +119,18 @@
    .place {
     width: 54.5rem;
     }
+    .newsletter::before{
+        left: -31rem;
+        right: 0;
+        top: -39rem;
+        bottom: 0;
+        width: auto;
+        height: auto;
+        background-size: auto;
+    }
+    .container{
+        width: 114rem;
+    }
 }
 @media screen and (min-width: 1400px) {
   .servise{
@@ -84,4 +139,7 @@
     .place {
     width: 31.5rem;
    }
+    .container{
+        width: 135rem;
+    }
 }
